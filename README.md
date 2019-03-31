@@ -1,4 +1,1 @@
 # devsu
-
-Ejecutar
-npm install

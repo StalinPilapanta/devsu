@@ -1,0 +1,15 @@
+version: '3'
+
+
+services:
+  web:
+    container_name: node
+    ports:
+      - "8002:8001"
+    image: nginxapp
+  jenkins:
+    container_name: jenkinsci
+    image: "jenkins"
+    ports:
+      - "8080:8080"
+    restart: "always"

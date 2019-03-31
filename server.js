@@ -28,18 +28,15 @@ app.get('/hello/:name', function url (req, res){
 
 function testurl (){
   // 1. ARRANGE
-  var x = 5;
-  var y = 1;
-  var sum1 = x + y;
+  var x = 'stalin';
 
   // 2. ACT
-  var sum2 = addTwoNumbers(x, y);
+  var test1 = url();
 
-  console.log('url() Deberia entregar el nombre de la url.');
-  console.log('Expect ' + sum1 + ' to equal ' + sum2 + '.');
+  console.log('url() Deberia entregar el nombre de la url2.');
   
   // 3. ASSERT
-  if ( sum1 === sum2 ) 
+  if ( x === test1 ) 
     return console.log('Passed.');
   
   console.log('Failed.');
